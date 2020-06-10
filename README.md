@@ -13,7 +13,6 @@ Após instalar o pacote, realize a importação dele no arquivo em que desejar u
 
 ```javascript
 import cpf from 'cpf-authenticator';
-
 const isValid = cpf.cpfAuthenticator('números_do_cpf_como_string');
 ```
 
@@ -21,7 +20,6 @@ Ou
 
 ```javascript
 import { cpfAuthenticator } from 'cpf-authenticator';
-
 const isValid = cpfAuthenticator('números_do_cpf_como_string');
 ```
 
