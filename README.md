@@ -4,7 +4,7 @@
 ## Instalação
 
 ```sh
-npm install
+npm install cpf-authenticator
 ```
 
 ## Usando
