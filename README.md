@@ -1,31 +1,29 @@
-# Ecoleta
+# cpf-authenticator
 > Pacote desenvolvido em JavaScript que realiza validação do CPF.
 
 ## Instalação
 
 ```sh
-npm install
+npm install cpf-autheticator
 ```
 
 ## Usando
 
 Após instalar o pacote, realize a importação dele no arquivo em que desejar utilizar a validação do cpf. Veja formas de fazer isso:
 
----javascript
+```javascript
 import cpf from 'cpf-authenticator';
 
-
 const isValid = cpf.cpfAuthenticator('números_do_cpf_como_string');
----
+```
 
 Ou
 
----javascript
+```javascript
 import { cpfAuthenticator } from 'cpf-authenticator';
 
-
 const isValid = cpfAuthenticator('números_do_cpf_como_string');
----
+```
 
 O retorno da função será true (CPF válido) ou false (CPF inválido).
 
@@ -39,12 +37,12 @@ Para fazer a instalação das dependências, baixe os arquivos que compõe o pro
 npm install
 ```
 
-Será feito a instalação de todas as dependências do projeto
+Será feito a instalação de todas as dependências do projeto.
 
 ## Histórico de lançamentos
 
-* 0.0.1
-    * Versão da Next Level Week com adição de campos de seleção das UFs e cidades no aplicativo mobile.
+* 1.0.2
+    * Versão inicial.
 
 ## Meta
 
