@@ -25,7 +25,14 @@ const isValid = cpfAuthenticator('números_do_cpf_como_string');
 
 O retorno da função será true (CPF válido) ou false (CPF inválido).
 
-Deve ser passado uma string como parâmetro da função cpfAuthenticator. Essa string pode ser formada apenas pelos números do CPF ou pelos números na máscara (000.000.000-00);
+Deve ser passado uma string como parâmetro da função cpfAuthenticator. Essa string pode ser formada apenas pelos números do CPF ou pelos números na máscara (nnn.nnn.nnn-nn);
+
+Você também pode definir se um CPF com números repetidos (ex.: 999.999.999-99) será válido ou não. Um CPF composto de números repetidos é inválido na prática, porém, passa pela algoritmo de verificação. Você pode definir se aceita ou não, utilizando um segundo parâmetro como false na função cpfAuthenticator. 
+
+```javascript
+import { cpfAuthenticator } from 'cpf-authenticator';
+const isValid = cpfAuthenticator('números_do_cpf_como_string', false); //números repetidos não serão válidos
+```
 
 ## Configuração para Desenvolvimento
 
@@ -38,7 +45,8 @@ npm install
 Será feito a instalação de todas as dependências do projeto.
 
 ## Histórico de lançamentos
-
+* 1.0.3
+    * Adição de ferramenta para retornar como false CPF com números repetidos.
 * 1.0.2
     * Versão inicial.
 

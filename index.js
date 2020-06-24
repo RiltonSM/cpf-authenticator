@@ -1,4 +1,4 @@
-function cpfAuthenticator(cpf){
+function cpfAuthenticator(cpf, repeat){
     let cpfNumbers = [];
     if(cpf.length === 11){
         cpfNumbers = cpf.split('');
@@ -12,6 +12,16 @@ function cpfAuthenticator(cpf){
     } else {
         return {
             "error": "Tamanho do CPF não está correto, tente retirar os pontos e o hífen e verifique se há 11 números"
+        }
+    }
+
+    if(repeat === false){
+        let i = 0;
+        cpfNumbers.map(number => {
+            number === cpfNumbers[0] ? i++ : null;
+        });
+        if(i === 11){
+            return false;
         }
     }
     

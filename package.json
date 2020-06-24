@@ -1,11 +1,21 @@
 {
   "name": "cpf-authenticator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "keywords": [
+    "cpf",
+    "validação",
+    "validation",
+    "cpf-validator",
+    "cpf-validation",
+    "autenticação",
+    "authenticator",
+    "cpf-authenticator"
+  ],
   "author": "Rilton de Santiago Moreira",
   "license": "ISC"
 }
